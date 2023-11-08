@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà sách Thanh Hà</title>
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- link font roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="decorate-bar">
+                <div class="contain-decorations">
+                    <svg>
+                        <polygon points="9.9, 0, 3.3, 20.68, 19.8, 7.48, 0, 7.48, 16.5, 20.68"/>  
+                     </svg>    
+                     <div class="contain-canvas">
+                         <canvas width="275px" height="42px">
+                             Trình duyệt của bạn không hỗ trợ thẻ canvas.
+                         </canvas>
+                     </div>
+                     <svg>
+                         <polygon points="9.9, 0, 3.3, 20.68, 19.8, 7.48, 0, 7.48, 16.5, 20.68"/>  
+                     </svg>  
+                </div>
+            </div>
+            <div class="header-bar">
+                <div class="logo">
+                    <img src="./images/general/logo-thanhhabook-hoanThien-a.png" alt="">
+                </div>
+                <!-- se dieu chinh theo kich thuoc man hinh > 1024 -->
+                <div class="search-area">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Nhập sản phẩm bạn muốn tìm kiếm">
+                </div>
+                <!-- xuat hien khi w man hinh <= 1024 -->
+                <div class="menu"> 
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!-- xuat hien khi nhan nut menu -->
+                <div class="menu-board">
+                    <div class="menu-board-right"></div>
+                    <nav class="menu-board-left">
+                        <a href="index.html">
+                            <div class="menu-list">
+                                TRANG CHỦ
+                            </div>
+                        </a>
+                        <a href="prod.html">
+                            <div class="menu-list">
+                                SẢN PHẨM
+                            </div>
+                        </a>
+                        <a href="cart.html">
+                            <div class="menu-list choosen">
+                                GIỎ HÀNG
+                            </div>
+                        </a>
+                        <a href="about.html">
+                            <div class="menu-list">
+                                GIỚI THIỆU
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="menu-list">
+                                ĐĂNG NHẬP
+                            </div>
+                        </a>
+                        <div class="exit-menu"> 
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="logo">
+                            <img src="./images/general/logo-thanhhabook-hoanThien-b.png" alt="">
+                        </div>
+                    </nav>
+                </div>
+                <!-- xuat hien khi kich thuoc man hinh > 1024 -->
+                <nav class="menu-header">
+                    <a href="index.html">
+                        <div class="menu-list">
+                            TRANG CHỦ
+                        </div>
+                    </a>
+                    <a href="prod.html">
+                        <div class="menu-list">
+                            SẢN PHẨM
+                        </div>
+                    </a>
+                    <a href="cart.html">
+                        <div class="menu-list choosen">
+                            GIỎ HÀNG
+                        </div> 
+                    </a>
+                    <a href="about.html">
+                        <div class="menu-list">
+                            GIỚI THIỆU
+                        </div>
+                    </a>
+                    <a href="login.html">
+                        <div class="menu-list">
+                            ĐĂNG NHẬP
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="cart-empty" style="display: none;">
+                <div class="heading">
+                    <span>
+                        GIỎ HÀNG TRỐNG
+                    </span>
+                </div>
+                <div class="contain-img">
+                    <img src="./images/cart/empty-cart.png" alt="">
+                </div>
+                <div class="note">
+                    <span>
+                        Chưa có sản phẩm trong giỏ hàng của bạn.
+                    </span>
+                </div>
+                <a href="./prod.html">
+                    <button class="continue-shopping">
+                        TIẾP TỤC MUA SẮM
+                    </button>
+                </a>
+            </section>
+            <section class="cart-detail" style="display: none;">
+                <div class="heading">
+                    <span>
+                        CHI TIẾT GIỎ HÀNG
+                    </span>
+                </div>
+                <ul class="prod-list">
+                    <!-- se them vao prod item qua file js -->
+                </ul>
+                <div class="pay-area">
+                    <div class="discount-code">
+                        <div class="title">
+                            <span>
+                                NHẬP MÃ KHUYẾN MÃI (NẾU CÓ):
+                            </span>
+                            <button class="view-more">
+                                XEM THÊM
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="enter-code">
+                            <input type="text">
+                            <button class="apply">
+                                ÁP DỤNG
+                            </button>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="content">
+                            <span class="title">
+                                TỔNG SỐ TIỀN:
+                            </span>
+                            <span class="price">
+                                <!-- tong so tien duoc tinh tai file js -->
+                            </span>
+                        </div>
+                        <button class="pay">
+                            THANH TOÁN
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-bar">
+                <div class="logo">
+                    <img src="./images/general/logo-thanhhabook-hoanThien-b.png" alt="">
+                </div>
+                <div class="contact">
+                    <div class="title">LIÊN HỆ</div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i> 
+                       123, Tân Hiệp, Q5, TP. HCM
+                    </div>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        info@thanhhabook.com
+                    </div>
+                    <div class="phone">
+                        <i class="fas fa-phone-alt"></i>
+                        1900636123
+                    </div>
+                    <nav class="social-media-bar">
+                        <a href="https://www.facebook.com/#FPT">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram-square"></i> 
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-pinterest-square"></i>
+                        </a> 
+                    </nav>
+                </div> 
+                <div class="payment-methods">
+                    <div class="title">PHƯƠNG THỨC THANH TOÁN</div>
+                    <div class="contain-img">
+                        <img src="./images/general/visa.svg" alt="">
+                        <img src="./images/general/mastercard.svg" alt="">
+                        <img src="./images/general/jcb.svg" alt="">
+                        <img src="./images/general/cash.svg" alt="">
+                        <img src="./images/general/internet-banking.svg" alt="">
+                        <img src="./images/general/installment.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button id="to-top">
+            <i class="fas fa-chevron-circle-left"></i>
+        </button>
+        <div id="ad">
+            <img src="./images/general/create-by-TCM.png" alt="">
+            <div class="close">
+                <i class="far fa-times-circle"></i>
+            </div>
+        </div>
+    </div>
+    <!-- link js -->
+    <script src="./js/general.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>

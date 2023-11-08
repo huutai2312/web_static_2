@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà sách Thanh Hà</title>
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- link font roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="decorate-bar">
+                <div class="contain-decorations">
+                    <svg>
+                        <polygon points="9.9, 0, 3.3, 20.68, 19.8, 7.48, 0, 7.48, 16.5, 20.68"/>  
+                     </svg>    
+                     <div class="contain-canvas">
+                         <canvas width="275px" height="42px">
+                             Trình duyệt của bạn không hỗ trợ thẻ canvas.
+                         </canvas>
+                     </div>
+                     <svg>
+                         <polygon points="9.9, 0, 3.3, 20.68, 19.8, 7.48, 0, 7.48, 16.5, 20.68"/>  
+                     </svg>  
+                </div>
+            </div>
+            <div class="header-bar">
+                <div class="logo">
+                    <img src="./images/general/logo-thanhhabook-hoanThien-a.png" alt="">
+                </div>
+                <!-- se dieu chinh theo kich thuoc man hinh -->
+                <div class="search-area">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Nhập sản phẩm bạn muốn tìm kiếm">
+                </div>
+                <!-- xuat hien khi w man hinh <= 1024 -->
+                <div class="menu"> 
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!-- xuat hien khi nhan nut menu -->
+                <div class="menu-board">
+                    <div class="menu-board-right"></div>
+                    <nav class="menu-board-left">
+                        <a href="index.html">
+                            <div class="menu-list">
+                                TRANG CHỦ
+                            </div>
+                        </a>
+                        <a href="prod.html">
+                            <div class="menu-list">
+                                SẢN PHẨM
+                            </div>
+                        </a>
+                        <a href="cart.html">
+                            <div class="menu-list">
+                                GIỎ HÀNG
+                            </div>
+                        </a>
+                        <a href="about.html">
+                            <div class="menu-list">
+                                GIỚI THIỆU
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="menu-list choosen">
+                                ĐĂNG NHẬP
+                            </div>
+                        </a>
+                        <div class="exit-menu"> 
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="logo">
+                            <img src="./images/general/logo-thanhhabook-hoanThien-b.png" alt="">
+                        </div>
+                    </nav>
+                </div>
+                <!-- xuat hien khi kich thuoc man hinh > 1024 -->
+                <nav class="menu-header">
+                    <a href="index.html">
+                        <div class="menu-list">
+                            TRANG CHỦ
+                        </div>
+                    </a>
+                    <a href="prod.html">
+                        <div class="menu-list">
+                            SẢN PHẨM
+                        </div>
+                    </a>
+                    <a href="cart.html">
+                        <div class="menu-list">
+                            GIỎ HÀNG
+                        </div>
+                    </a>
+                    <a href="about.html">
+                        <div class="menu-list">
+                            GIỚI THIỆU
+                        </div>
+                    </a>
+                    <a href="login.html">
+                        <div class="menu-list choosen">
+                            ĐĂNG NHẬP
+                        </div>
+                    </a>
+                </nav>
+            </div> 
+        </header>
+        <section class="login">
+            <div class="title">
+                <div class="label-list-choosen">Đăng Nhập</div>
+                <div class="label-list">Đăng Ký</div>
+            </div>
+            <div class="login-area">
+                <div class="login-form" style="display: block;">
+                    <form>
+                        <div class="form-group">
+                            <label for="account">Tài khoản:</label>
+                            <input type="text" name="" id="logAccount" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                            <span class="notification"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu:</label>
+                            <div class="show-pass">Hiện <i class="fas fa-eye"></i></div>
+                            <input type="password" name="" id="logPassword" placeholder="Từ 4 đến 20 kí tự">
+                            <span class="notification"></span>
+                        </div>
+                        <button type="button" class="not-allow-submit">ĐĂNG NHẬP</button>
+                    </form>
+                    <div class="suggest">
+                        <div class="forgot-pass">
+                            <a href="#">
+                                Quên mật khẩu?
+                            </a>
+                        </div>
+                        <div class="register">
+                            <a>    
+                                Tạo tài khoản
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-login">
+                        <div class="title">
+                            Hoặc đăng nhập bằng
+                        </div>
+                        <div class="social-list">
+                            <a href="#">
+                                <div class="social-item">
+                                    <img src="./images/login/face.png" alt="" >
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="social-item">
+                                    <img src="./images/login/google.png" alt="" >
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="social-item">
+                                    <img src="./images/login/zalo.png" alt="" >
+                                </div>
+                            </a>
+                        </div>
+                        <div class="note">
+                            Bằng việc đăng nhập, bạn đã chấp nhận 
+                            <a href="#">điều khoản sử dụng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rgtr-form" style="display: none;">
+                    <form onkeypress="">
+                        <div class="form-group">
+                            <label for="name">Họ và tên:</label>
+                            <input type="text" name="" id="name" placeholder="Họ tên của bạn">
+                            <span class="notification"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="" id="email" placeholder="x@gmail.com">
+                            <span class="notification"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại:</label>
+                            <input type="text" name="" id="phone" placeholder="0918...">
+                            <span class="notification"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Địa chỉ:</label>
+                            <input type="text" name="" id="address" placeholder="TP/Tỉnh, Quận/Huyện, Phường/Ấp, Số nhà">
+                            <span class="notification"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="account">Tên đăng nhập:</label>
+                            <input type="text" name="" id="account" placeholder="Tên đăng nhập">
+                            <span class="notification"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu:</label>
+                            <div class="show-pass">Hiện <i class="fas fa-eye"></i></div>
+                            <input type="password" name="" id="password" placeholder="Từ 4 đến 20 kí tự">
+                            <span class="notification"></span>    
+                        </div>
+                        <div class="form-group">
+                            <label for="reEnterPass">Nhập lại mật khẩu:</label>
+                            <div class="show-pass">Hiện <i class="fas fa-eye"></i></div>
+                            <input type="password" name="" id="reEnterPass" placeholder="Trùng với mật khẩu">
+                            <span class="notification"></span>
+                        </div>
+                        <button type="button" class="not-allow-submit">ĐĂNG KÝ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-bar">
+                <div class="logo">
+                    <img src="./images/general/logo-thanhhabook-hoanThien-b.png" alt="">
+                </div>
+                <div class="contact">
+                    <div class="title">LIÊN HỆ</div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i> 
+                       123, Tân Hiệp, Q5, TP. HCM
+                    </div>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        info@thanhhabook.com
+                    </div>
+                    <div class="phone">
+                        <i class="fas fa-phone-alt"></i>
+                        1900636123
+                    </div>
+                    <nav class="social-media-bar">
+                        <a href="https://www.facebook.com/#FPT">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram-square"></i> 
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-pinterest-square"></i>
+                        </a> 
+                    </nav>
+                </div>
+                <div class="payment-methods">
+                    <div class="title">PHƯƠNG THỨC THANH TOÁN</div>
+                    <div class="contain-img">
+                        <img src="./images/general/visa.svg" alt="">
+                        <img src="./images/general/mastercard.svg" alt="">
+                        <img src="./images/general/jcb.svg" alt="">
+                        <img src="./images/general/cash.svg" alt="">
+                        <img src="./images/general/internet-banking.svg" alt="">
+                        <img src="./images/general/installment.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button id="to-top">
+            <i class="fas fa-chevron-circle-left"></i>
+        </button>
+        <div id="ad">
+            <img src="./images/general/create-by-TCM.png" alt="">
+            <div class="close">
+                <i class="far fa-times-circle"></i>
+            </div>
+        </div>
+    </div>
+    <!-- link js -->
+    <script src="./js/general.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>

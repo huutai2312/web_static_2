@@ -1,0 +1,525 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Androgyne';
+    src: url(../fonts/UTM\ Androgyne.ttf);
+}
+html{
+    font-family: 'Roboto' ,sans-serif;
+    font-size: 10px;
+    color: var(--black-text);
+}
+:root{
+    --primary-color: #440a67;
+    --primary-color-blur: #430a6750;
+    --secondary-color: #4ca1a3;
+    --tertiary-color: #b4aee8;
+    --orange: #fb9224;
+    --red: #ff3333;
+    --light-red: #fda8a8;
+    --gray: #f4f4f4;
+    --orange: #F7941E;
+    --light-orange: rgba(247, 148, 30, 0.2);
+    --black-text: #333;
+    --gray-text: #888;
+    --white: #fff;
+}
+#wrapper{
+    width: 100%;
+    background-color: var(--gray);
+    position: relative;
+}
+a{
+    color: var(--primary-color);
+}
+a:hover{
+    color: var(--secondary-color);
+}
+::selection{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+/* end common css */
+
+/* header */
+header{
+    width: 100%;
+    height: 12rem;
+    background-color: var(--primary-color);
+}
+header .decorate-bar{
+    width: 100%;
+    height: 5rem;
+    margin: auto;
+    /* background-color: var(--tertiary-color); */
+    background-image: linear-gradient(to left,var(--primary-color),var(--tertiary-color),var(--primary-color));
+}
+header .contain-decorations{
+    width: 100%;
+    max-width: 400px;
+    height: 5rem;
+    margin: auto;
+}
+header svg{
+    float: left;
+    margin-top: 1.4rem;
+    height: 22px;
+    width: 20px; 
+    fill: var(--primary-color)
+}
+header .contain-canvas{
+    width: calc(100% - 60px);
+    min-width: 310px;
+    height: 5rem;
+    margin: 0 1rem;
+
+    float: left;
+    background-color: var(--primary-color);
+    border: 0.3rem solid var(--tertiary-color);
+    border-radius: 50px;
+}
+header canvas{
+    display: block;
+    margin: auto;
+    margin-top: 0.1rem;
+}
+.header-bar{
+    max-width: 1240px;
+    height: 7rem;
+    margin: auto;
+    background-color: var(--primary-color);
+}
+.header-bar > .logo img{
+    width: 8.3rem;
+    height: 7rem;
+    float: left;
+    margin-left: 1.5rem;
+    margin-top: -0.3rem;
+}
+.menu-header{
+    width: 700px;
+    height: 7rem;
+    float: right;
+}
+.menu-header .menu-list,
+.menu-header .choosen{
+    width: fit-content;
+    height: 7rem;
+    float: left;
+    padding: 0 15px 0;
+    font-size: 2rem;
+    font-weight: bolder;  
+    line-height: 7rem;
+    color: var(--white);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.menu-header .menu-list:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: var(--secondary-color);
+    transition: 0.15s;
+    z-index: -1;
+}
+.menu-header .menu-list:hover:before{
+    top: 0%;
+}
+.menu-header .menu-list:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: var(--secondary-color);
+    transition: 0.15s;
+    z-index: -1;
+}
+.menu-header .menu-list:hover:after{
+    top: 50%;
+}
+.menu-header .choosen{
+    border-bottom: 5px solid var(--secondary-color);
+}
+.search-area{
+   float: right;
+   width: 50px; 
+   height: 7rem;
+   text-align: center;
+   margin-right: 1.5rem;
+}
+.search-area .fas{
+    font-size: 3.5rem;
+    line-height: 70px;
+    color: var(--white);
+    cursor: pointer;
+}
+.menu{
+    display: none;
+}
+.search-area .fas:hover{
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+.search-area > input{
+    width: 775px;
+    height: 7rem;
+    position: relative;
+    left: -765px;
+    top: -69.75px;
+    font-size: 2rem;
+    padding: 0 2rem 0.1rem;
+    border-radius: 5rem;
+    border: 1rem solid var(--primary-color);
+    color: var(--black-text);
+    z-index: 1;
+    outline: none;
+    display: none;
+}
+.menu-board{
+    display: none;
+}
+/* end header css */
+/* footer css */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--white);
+    border-top: 2px solid var(--primary-color);
+}
+.footer-bar{
+    max-width: 1240px;
+    height: 200px;
+    padding: 10px 0 10px;
+    margin: auto;
+}
+footer .logo img{
+    width: 200px;
+    height: auto;
+    float: left;
+}
+footer .contact{
+    width: 400px;
+    height: 180px;
+    float: left;
+    margin: 0 calc(50% - 450px) 0;
+}
+footer .title{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;  
+    line-height: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+}
+footer .location,
+footer .email,
+footer .phone{ 
+    font-size: 1.9rem;  
+    line-height: 3.5rem;
+    color: var(--primary-color);
+}
+footer .social-media-bar{
+    width: 100%;
+    margin-top: 5px;
+}
+footer .social-media-bar a{
+    text-decoration: none;
+    font-size: 3.5rem;
+    word-spacing: 10px;
+}
+footer .payment-methods{
+    width: 300px;
+    height: 180px;
+    float: left;
+}
+footer .contain-img{
+    width: 297px;
+}
+footer .contain-img img{
+    width: 94px;
+    margin: 3px 2px 0 0;
+}
+/* end css footer */
+
+/* btn to-top */
+#to-top{
+    width: 4rem;
+    height: 4rem;
+
+    display: none;
+    position: fixed; 
+    bottom: 2rem;
+    right: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: transparent;
+    color: var(--primary-color);
+
+    font-size: 5rem;
+
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
+#to-top:hover{
+    color: var(--secondary-color);
+}
+/* ad : advertise*/
+#ad{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000088;
+    display: none;
+}
+#ad img{
+    display: block;
+    width: auto;
+    height: 16rem;
+    margin: calc(50vh - 15rem) auto;
+    border-radius: 1rem;
+    border: 1rem double var(--primary-color);
+    background-color: var(--secondary-color);
+}
+#ad .close{
+    width: 300px;
+    height: 6rem;
+    position: absolute;
+    bottom: calc(50vh - 8rem);
+    left: calc(50% - 150px);
+    font-size: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    color: var(--white);
+    transition: 0.1s;
+}
+#ad .close:hover{
+    color: var(--primary-color);
+}
+
+/* responsive css */
+@media all and (max-width: 1024px){
+    /* font-size */
+    html{
+        font-size: 9px;
+    }
+    /* header */
+    header canvas{
+        display: block;
+        margin: auto;
+        margin-top: -0.1rem;
+    }
+    .menu-header{
+        display: none;
+    }
+    .search-area{
+       float: left;
+       width: calc(100% - 172px); 
+       margin-left: 2.3rem;
+    }
+    .search-area .fas{
+        display: none;
+    }
+    .search-area > input{
+        width: 100%;
+        position: static;
+        display: block;
+        border: none;
+        margin-top: 1.2rem;
+        height: 4.6rem;
+        padding-top: 0.4rem;
+    }
+    .menu{
+        display: block;
+        width: 3.2rem;
+        height: 7rem;
+        float: left;
+    }
+    .menu .fas{
+        font-size: 3.5rem;
+        line-height: 7rem;
+        color: var(--white);
+    }
+    .menu-board{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        /* phu kin toan trang web */
+    }
+    .menu-board .choosen{
+        color: var(--secondary-color);
+    }
+    .menu-board-right{
+        width: calc(100% - 280px);
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        float: left;
+    }
+    .menu-board-left{
+        width: 280px;
+        height: 100%;
+        background-color: var(--gray);
+        float: right;
+        padding-top: 8px;
+    }
+    .menu-board-left .menu-list{
+        width: 150px;
+        height: 20px;
+        margin: 22px 0 0 20px;
+    }
+    .menu-board-left a{
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: bolder;  
+    }
+    .menu-board-left .exit-menu{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 3.5rem;
+        color: var(--primary-color);
+    }
+    .menu-board-left .logo img{
+        display: block;
+        margin: 80px auto 0;
+        width: 200px;
+    }
+    /* end header */
+    /* footer */
+    footer{
+        height: 420px;
+    }
+    footer .logo{
+        width: 70%;
+        height: 200px;
+        position: absolute;
+        padding-top: 20px;
+        bottom: 8px;
+        margin-left: 15%;
+        border-top: 1px solid var(--black-text);
+    }
+    footer .logo img{
+        display: block;
+        margin-left: calc(50% - 100px);
+    }
+    footer .contact{
+        margin: 0 0 0 calc(50% - 350px);
+    }
+    footer .contain-img img{
+        margin-top: 12px;
+    }
+    /* end footer */
+}
+@media all and (max-width: 740px){
+    /* font-size */
+    html{
+        font-size: 7px;
+    }
+    /* header */
+    .header-bar > .logo{
+        display: none;
+    }
+    .search-area{
+       width: calc(100% - 70px); 
+       margin-left: 2.5rem;  
+    }
+    .search-area > input{
+        width: 100%;
+        position: static;
+        display: block;
+        border-radius: 1rem;
+        border-width: 0;
+    }
+    header .decorate-bar{
+        height: 5.5rem;
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+    header .contain-decorations{
+        width: 300px;
+    }
+    header .contain-canvas{
+        min-width: 300px;
+        width: 300px;
+        margin-left: 0;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    header svg{
+        display: none; 
+    }
+    .menu-board-left{
+        padding-top: 12px;
+    }
+    .menu-board-left .exit-menu {
+        top: 10px;
+    }
+    .menu-board-left .menu-list{
+        margin: 14px 0 0 20px;
+    }
+    /* end header */
+    /* footer */
+    footer{
+        height: 380px;
+    }
+    footer .contact{
+        width: 276px;
+        margin: 0 0 0 calc(50% - 283px);
+        height: 145px;
+    }
+    footer .payment-methods{
+        width: 290px;
+        margin: 0;
+        height: 145px;
+    }
+    footer .logo{
+        padding-top: 10px;
+    }
+    footer .contain-img img{
+        margin-top: 3px;
+    }
+    /* end footer */
+}
+@media all and (max-width: 600px){
+    footer{
+        height: 525px;
+    }
+    footer .contact{
+        width: 276px;
+        margin: 0 0 0 calc(50% - 138px);
+        height: 145px;
+    }
+    footer .payment-methods{
+        width: 290px;
+        margin: 0 0 0 calc(50% - 145px);
+        height: 145px;
+    }
+}
+@media all and (max-width: 320px){   
+    /* ad : advertise */
+    #ad .close{
+        bottom: calc(50vh - 10rem);
+    }
+}
+
+
